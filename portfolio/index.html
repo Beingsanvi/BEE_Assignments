@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanvi Sharma | AI & ML Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d311d9e0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- ================= PARTICLES CANVAS ================= -->
+<canvas id="particles"></canvas>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav>
+        <h2 class="logo">Sanvi<span class="dot">.</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <div class="hero-badge">AI & ML Engineer</div>
+        <h3>Hello, I'm</h3>
+        <h1>Sanvi Sharma</h1>
+        <h2><span id="typing"></span><span class="cursor">|</span></h2>
+        <p>
+            Passionate AI & Machine Learning student focused on building
+            intelligent applications using Deep Learning, NLP, Large Language
+            Models and Backend Development.
+        </p>
+        <div class="buttons">
+            <a href="#projects" class="btn"><i class="fas fa-rocket"></i> View Projects</a>
+            <a href="resume.pdf" class="btn btn-outline" download><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-target="3">0</span>+
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="4">0</span>+
+                <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="5">0</span>+
+                <span class="stat-label">Technologies</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="image-wrapper">
+            <img src="images/profile.jpg" alt="Sanvi">
+            <div class="image-ring"></div>
+            <div class="image-ring ring-2"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+        <div class="about-text">
+            <p>
+                I am pursuing B.E. in Computer Science Engineering
+                (Artificial Intelligence & Machine Learning)
+                at Chitkara University.
+            </p>
+            <p>
+                I enjoy solving real-world problems using Artificial Intelligence,
+                Machine Learning, Data Science and Backend Development.
+            </p>
+            <p>
+                Currently I am exploring Deep Learning,
+                Generative AI, LangChain, RAG,
+                Vector Databases and AI Agents.
+            </p>
+        </div>
+        <div class="about-highlights">
+            <div class="highlight">
+                <i class="fas fa-brain"></i>
+                <h4>AI & ML</h4>
+                <p>Building intelligent systems</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-code"></i>
+                <h4>Backend</h4>
+                <p>Scalable APIs & databases</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-robot"></i>
+                <h4>Gen AI</h4>
+                <p>LLMs & AI Agents</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card" data-skill="90">
+            <i class="fab fa-python"></i>
+            <h4>Python</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:90%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="75">
+            <i class="fab fa-java"></i>
+            <h4>Java</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:75%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="70">
+            <i class="fas fa-code"></i>
+            <h4>C++</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:70%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="80">
+            <i class="fab fa-js"></i>
+            <h4>JavaScript</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="85">
+            <i class="fas fa-laptop-code"></i>
+            <h4>HTML/CSS</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="80">
+            <i class="fas fa-database"></i>
+            <h4>SQL</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="75">
+            <i class="fas fa-leaf"></i>
+            <h4>MongoDB</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:75%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="85">
+            <i class="fas fa-cogs"></i>
+            <h4>Machine Learning</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="80">
+            <i class="fas fa-network-wired"></i>
+            <h4>Deep Learning</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="85">
+            <i class="fas fa-language"></i>
+            <h4>NLP</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="80">
+            <i class="fas fa-robot"></i>
+            <h4>LLMs</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="75">
+            <i class="fas fa-search"></i>
+            <h4>RAG</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:75%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="80">
+            <i class="fas fa-bolt"></i>
+            <h4>FastAPI</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="85">
+            <i class="fas fa-plug"></i>
+            <h4>REST APIs</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="80">
+            <i class="fab fa-git-alt"></i>
+            <h4>Git & GitHub</h4>
+            <div class="skill-bar"><div class="skill-fill" style="--width:80%"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-container">
+        <div class="project-card">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Stock Market Prediction</h3>
+            <p>
+                Machine Learning project for predicting
+                stock movement using historical market data,
+                feature engineering and visualization.
+            </p>
+            <div class="project-tags">
+                <span>Python</span><span>ML</span><span>Pandas</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon"><i class="fas fa-comment-dots"></i></div>
+            <h3>AI Chatbot</h3>
+            <p>
+                NLP powered chatbot capable of answering
+                user queries using Python and APIs.
+            </p>
+            <div class="project-tags">
+                <span>Python</span><span>NLP</span><span>API</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <h3>Building LLMs from Scratch</h3>
+            <p>
+                Implemented tokenization, embeddings,
+                self-attention and transformer architecture
+                to understand Large Language Models.
+            </p>
+            <div class="project-tags">
+                <span>Python</span><span>Transformers</span><span>DL</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+        <div class="timeline-box">
+            <div class="timeline-dot"></div>
+            <h3>Chitkara University</h3>
+            <p>B.E. Computer Science (AI & ML)</p>
+            <span>2024 - Present</span>
+        </div>
+        <div class="timeline-box">
+            <div class="timeline-dot"></div>
+            <h3>12th (CBSE)</h3>
+            <p>Senior Secondary</p>
+        </div>
+        <div class="timeline-box">
+            <div class="timeline-dot"></div>
+            <h3>10th (ICSE)</h3>
+            <p>Secondary</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="certificate-list">
+        <li><i class="fas fa-award"></i> Microsoft Azure Fundamentals (AZ-900)</li>
+        <li><i class="fas fa-certificate"></i> C Programming Workshop</li>
+        <li><i class="fas fa-trophy"></i> Coding Ninjas Hackathon Participant</li>
+        <li><i class="fas fa-star"></i> Google Developer Group Odyssey Event</li>
+    </ul>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <p>sanvi.sharma2210@gmail.com</p>
+        </div>
+        <div class="contact-box">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <h4>GitHub</h4>
+            <p>github.com/Beingsanvi</p>
+        </div>
+        <div class="contact-box">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <h4>LinkedIn</h4>
+            <p>linkedin.com/in/sanvi-sharma-6bb410306</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>&copy; 2026 Sanvi Sharma | Designed with <span class="heart">&#10084;</span> using HTML, CSS & JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
