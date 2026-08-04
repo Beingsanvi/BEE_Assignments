@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Feedback Form</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:600px;
+            margin:40px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        h2{
+            margin-bottom:25px;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+            font-size:16px;
+        }
+
+        input, select, textarea{
+            width:95%;
+            padding:10px;
+            margin-bottom:5px;
+        }
+
+        textarea{
+            height:80px;
+            resize:vertical;
+        }
+
+        button{
+            padding:10px;
+            margin:10px 5px 10px 0;
+            cursor:pointer;
+        }
+
+        .error{
+            color:red;
+            font-size:14px;
+            min-height:18px;
+        }
+
+        #sessionUser{
+            font-size:18px;
+            font-weight:bold;
+            margin-top:20px;
+        }
+
+        #storedFeedback{
+            margin-top:15px;
+            background:#eeeeee;
+            padding:15px;
+            min-height:50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Feedback Form</h2>
+
+
+    <!-- Student Name -->
+    <label>Student Name</label>
+
+    <input type="text" id="studentName" placeholder="Enter Student Name">
+
+    <div id="nameError" class="error"></div>
+
+
+    <!-- Email -->
+    <label>Email</label>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <div id="emailError" class="error"></div>
+
+
+    <!-- Course -->
+    <label>Course</label>
+
+    <select id="course">
+
+        <option value="">Select Course</option>
+
+        <option value="Java">Java</option>
+
+        <option value="Python">Python</option>
+
+        <option value="C++">C++</option>
+
+        <option value="Web Development">Web Development</option>
+
+        <option value="Data Science">Data Science</option>
+
+    </select>
+
+    <div id="courseError" class="error"></div>
+
+
+    <!-- Feedback -->
+    <label>Feedback</label>
+
+    <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+
+    <div id="feedbackError" class="error"></div>
+
+
+    <!-- Buttons -->
+
+    <button onclick="submitFeedback()">
+        Submit Feedback
+    </button>
+
+    <button onclick="deleteStoredData()">
+        Delete Stored Data
+    </button>
+
+
+    <!-- Session Storage -->
+
+    <div id="sessionUser">
+        Current Session User:
+    </div>
+
+
+    <!-- Local Storage -->
+
+    <h2>Stored Feedback</h2>
+
+    <div id="storedFeedback">
+        No feedback stored.
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
