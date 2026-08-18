@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Exam Result</title>
+</head>
+
+<body>
+
+    <h1>Online Exam Result</h1>
+
+    <button onclick="checkResult()">
+        Check Result
+    </button>
+
+    <p id="p"></p>
+
+    <script>
+
+        function calculateResult() {
+
+            // A Promise represents a result that will be available sometime in the future.
+            // Here, the Promise means:
+            // "I will give you the exam result after some time."
+
+            return new Promise(resolve => {
+
+                // setTimeout() is used to simulate the result calculation
+                // It waits for 3 seconds before giving the result.
+
+                setTimeout(() => {
+
+                    // resolve() means the asynchronous task is completed.
+                    // It sends the final result to the function waiting for it.
+
+                    resolve("Your result is ready! You scored 85 marks.");
+
+                }, 3000);
+
+            });
+
+        }
+
+        async function checkResult() {
+
+            // async allows us to use await inside this function.
+            // It makes asynchronous code easier to read.
+
+            const para = document.getElementById("p");
+
+            // Display a message immediately
+
+            para.innerText = "Calculating your result...";
+
+            // await waits until calculateResult() finishes.
+            // It pauses only this async function, not the whole browser.
+
+            const result = await calculateResult();
+
+            // After 3 seconds, the Promise is resolved.
+            // The result contains: "Your result is ready! You scored 85 marks."
+
+            para.innerText = result;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
